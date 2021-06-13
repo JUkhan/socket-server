@@ -24,18 +24,3 @@ server.listen(server_port, function (err) {
   if (err) throw err;
   console.log("Listening on port %d", server_port);
 });
-
-/*const server = require("http").createServer();
-const io = require("socket.io")(server);
-io.on("connection", function (socket) {
-  console.log("connected....");
-  socket.on("chat message", (msg) => {
-    console.log(msg);
-    io.emit("chat message", msg);
-  });
-});
-var server_port = process.env.PORT || 3000;
-server.listen(server_port, function (err) {
-  if (err) throw err;
-  console.log("Listening on port %d", server_port);
-});*/
